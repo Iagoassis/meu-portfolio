@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="navbar">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="nav-link active" data-target="sobre">Sobre mim</a></li>
+                <li><a href="#" class="nav-link" data-target="formacao">Formação</a></li>
+                <li><a href="#" class="nav-link" data-target="portfolio">Portfólio</a></li>
+                <li><a href="#" class="nav-link" data-target="contato">Contato</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section id="sobre" class="section active">
+            <div class="section-container">
+                <h1>Quem é o Iago?</h1>
+                <div class="about-content">
+                    <img src="imagens/perfil-photoaidcom-cropped.png" alt="Minha Foto de Perfil" class="profile-img">
+                    <div class="about-text">
+                        <p>Sou de Salvador, Bahia. Atualmente, trabalho em setor industrial diretamente do polo petroquímico. No meu tempo livre, gosto bastante de consumir conteúdos relacionados a computadores (hardwares, customizações...) e este hobbie está entrelaçado com meu seguimento profissional.</p>
+                        <br>
+                        <p>Sou um estudante de Ciência da Computação, atuo com desenvolvimentos de automatizações utilizando o Power Automate Cloud e análise de dados com Power BI.</p>
+                        <br>
+                        <p>Tenho facilidade com lógica discreta e matemática aplicada, e busco sempre criar códigos limpos e eficientes para otimizar processos no setor industrial e de serviços.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="section">
+            <div class="section-container">
+                <h1>Formação Acadêmica</h1>
+                <div class="card">
+                    <h3>Graduação em Ciência da Computação</h3>
+                    <p>Entrei no curso em março de 2025.</p>
+                </div>
+                <div class="card">
+                    <h3>Curso de inglês</h3>
+                    <p>Realizo o curso de inglês pela United Idiomas</p>
+                </div>
+                <div class="card">
+                    <h3>Formação Educacional</h3>
+                    <p>Ensino Médio completo na Escola Imperio Do Saber</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="section-container">
+                <h1>Meus Projetos</h1>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <h3>App de Agendamento em Python</h3>
+                        <p>Sistema desenvolvido em Python e Django para gerenciar horários e clientes de uma barbearia local, projeto de extensão universitária.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <h3>Automação Web em Python com Power Automate Cloud</h3>
+                        <p>Scripts em Python integrados ao Power Automate Cloud para raspagem de dados (Web Scraping) e otimização de fluxos de trabalho industriais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="section-container">
+                <h1>Entre em Contato</h1>
+                <p>Estou aberto a novas oportunidades e projetos. Preencha o formulário abaixo ou conecte-se comigo:</p>
+                
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="usuario@dominio.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+
+                <div class="social-links">
+                    <p><strong>E-mail:</strong> iborgesdeassis@gmail.com</p>
+                    <p><strong>LinkedIn:</strong> linkedin.com/in/iago-assis</p>
+                    <p><strong>GitHub:</strong> github.com/Iagoassis</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
